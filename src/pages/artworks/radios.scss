@@ -30,9 +30,6 @@
   transition: all .2s;
 }
 
-[type="radio"]:checked + label:before {
-}
-
 [type="radio"]:checked + label:after {
   content: "";
   position: absolute;

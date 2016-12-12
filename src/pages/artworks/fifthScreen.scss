@@ -1,0 +1,137 @@
+.fifthScreen__bigText {
+  width: 322px;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 58px;
+  color: #000000;
+  margin: 150px auto 20px auto;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.fifthScreen__bigText--narrow {
+  width: 243px;
+}
+
+.fifthScreen__bigText--white {
+  width: 253px;
+  font-size: 48px;
+  text-align: center;
+  line-height: 65px;
+  color: #FFFFFF;
+  margin: 460px auto 0 auto;
+  font-weight: 700;
+  z-index: 1;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.fifthScreen__subtitle {
+  width: 337px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: #000000;
+  margin: auto;
+  z-index: 1;
+}
+
+.fifthScreen__flatGrey {
+  width: 100%;
+  height: 475.37px;
+  background-color: #D8D8D8;
+  position: absolute;
+  z-index: 0;
+  transform: skew(0deg, -3deg);
+  margin-top: 240px;
+}
+
+.fifthScreen__flatBlueText {
+  position: relative;
+  width: 267px;
+  height: 374px;
+  background-color: #0019FF;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+  border-radius: 2px;
+  margin: 33px auto;
+  z-index: 1;
+
+  h3 {
+    width: 169px;
+    height: 212px;
+    opacity: 0.31;
+    font-family: "DIN Condensed";
+    font-size: 106px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 127px;
+    color: #FFFFFF;
+    padding: 70px 0;
+    margin: auto;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+}
+
+.fifthScreen__quote {
+  width: 314px;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  color: #000000;
+  position: relative;
+  z-index: 1;
+}
+
+.fifthScreen__flatGreyText {
+  position: absolute;
+  width: 292px;
+  height: 180px;
+  background-color: #EFEFEF;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+  z-index: 0;
+  margin-top: -170px;
+
+  h3 {
+    opacity: 0.05;
+    text-transform: uppercase;
+    font-size: 93px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 127px;
+    letter-spacing: 3px;
+    color: #000000;
+    padding: 13px;
+  }
+}
+
+.fifthScreen__flatGreyText--right {
+  right: 0;
+  margin-top: -10px;
+}
+
+.fifthScreen__flatBlue {
+  width: 215px;
+  height: 724px;
+  margin-top: 370px;
+  background-color: #020CE5;
+  transform: skew(-4deg, 0deg);
+  position: absolute;
+  z-index: 0;
+}
+
+.fifthScreen__flatBlue--right {
+  right: 0;
+  position: absolute;
+  transform: skew(4deg, 0deg);
+}
+
+.fifthScreen__button.mainButton {
+  position: relative;
+  bottom: 11px;
+  margin: auto;
+  left: 0;
+}
