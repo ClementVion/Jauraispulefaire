@@ -9,7 +9,7 @@
 
     <ion-slide class="secondScreen">
       <h2 class="announce">A vous de jouer !</h2>
-      <canvas></canvas>
+      <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
       <ul>
         <li></li>
         <li></li>
@@ -49,6 +49,41 @@
       <button class="mainButton" (click)="goToNextSlide()">Ah bon ?</button>
     </ion-slide>
 
+    <ion-slide class="fifthScreen">
+      <ion-scroll  zooming="true" scrollY="true" style="width: 100%; height: 100vh">
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+      </ion-scroll>
+    </ion-slide>
+
 </ion-slides>
+
 
 </ion-content>
