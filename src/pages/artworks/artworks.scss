@@ -54,3 +54,48 @@ ion-slide {
   line-height: 36px;
   color: #000000;
 }
+
+.linesChoices {
+  width: 240px;
+  height: 60px;
+  margin: auto;
+  text-align: left;
+}
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding: 6px 65px;
+  cursor: pointer;
+  font-family: "DIN Pro";
+  font-size: 26px;
+  line-height: 35px;
+  color: #000000;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: 2px;
+  width: 17px; height: 17px;
+  border-radius: 50%;
+  border: 2px solid #D6D5D5;
+  box-sizing: border-box;
+  width: 42px;
+  height: 42px;
+  transition: all .2s;
+}
+
+/* checked mark aspect changes */
+[type="checkbox"]:checked + label:before {
+  background-color: #BBB9B9;
+  transition: all .2s;
+}
