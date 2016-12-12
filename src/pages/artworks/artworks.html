@@ -3,32 +3,33 @@
   <ion-slides #mySlider [options]="mySlideOptions">
 
     <ion-slide class="firstScreen">
-      <h2>Placez-vous devant l'oeuvre</h2>
-      <button (click)="goToNextSlide()">Ok</button>
+      <h2 class="mainTitle">Placez vous devant l'oeuvre</h2>
+      <button class="mainButton" (click)="goToNextSlide()">Ok</button>
     </ion-slide>
 
-    <ion-slide>
-      <h2>A vous de jouer !</h2>
+    <ion-slide class="secondScreen">
+      <h2 class="announce">A vous de jouer !</h2>
       <canvas></canvas>
       <ul>
         <li></li>
         <li></li>
         <li></li>
       </ul>
+      <button class="mainButton" (click)="goToNextSlide()">J'ai terminé</button>
     </ion-slide>
 
-    <ion-slide>
-      <h2>Que ressentez-vous face à cette oeuvre ?</h2>
+    <ion-slide class="thirdScreen">
+      <h2 class="question">Que ressentez-vous face à cette oeuvre ?</h2>
       <ul>
         <!-- checkbox -->
       </ul>
-      <button (click)="goToNextSlide()">Valider</button>
+      <button class="mainButton" (click)="goToNextSlide()">Valider</button>
     </ion-slide>
 
-    <ion-slide>
-      <h4>Vous avez sélectionné une des options ?</h4>
-      <h2>Bravo vous avez compris l'oeuvre !</h2>
-      <button (click)="goToNextSlide()">Ah bon ?</button>
+    <ion-slide class="fourthScreen">
+      <h4 class="question">Vous avez sélectionné une des options ?</h4>
+      <h2 class="mainTitle">Bravo vous avez compris l'oeuvre !</h2>
+      <button class="mainButton" (click)="goToNextSlide()">Ah bon ?</button>
     </ion-slide>
 
 </ion-slides>
