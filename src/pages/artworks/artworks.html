@@ -3,50 +3,62 @@
   <ion-slides #mySlider [options]="mySlideOptions">
 
     <ion-slide class="firstScreen">
-      <h2 class="mainTitle">Placez vous devant l'oeuvre</h2>
-      <button class="mainButton" (click)="goToNextSlide()">Ok</button>
+      <h2 class="firstScreen__title mainTitle">Placez vous devant l'oeuvre</h2>
+      <button class="firstScreen__button mainButton" (click)="goToNextSlide()">Ok</button>
     </ion-slide>
 
     <ion-slide class="secondScreen">
-      <h2 class="announce">A vous de jouer !</h2>
+      <h2 class="secondScreen__title topTitleBrush">A vous de jouer !</h2>
       <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <button class="mainButton" (click)="goToNextSlide()">J'ai terminé</button>
+      <div class="secondScreen__bottom">
+        <h4 class="secondScreen__chooseTitle">Choisissez une couleur</h4>
+        <div class="secondScreen__checkboxes">
+          <p>
+          <input type="radio" name="colors" id="colorOne">
+          <label for="colorOne"></label>
+          </p>
+          <p>
+          <input type="radio" name="colors" id="colorTwo">
+          <label for="colorTwo"></label>
+          </p>
+          <p>
+          <input type="radio" name="colors" id="colorThree">
+          <label for="colorThree"></label>
+          </p>
+        </div>
+        <button class="secondScreen__button mainButton" (click)="goToNextSlide()">J'ai terminé</button>
+      </div>
     </ion-slide>
 
     <ion-slide class="thirdScreen">
-      <h2 class="question">Que ressentez-vous face à cette oeuvre ?</h2>
-      <p class="linesChoices">
+      <h2 class="thirdScreen__title topTitle">Que ressentez-vous face à cette oeuvre ?</h2>
+      <p class="thirdScreen__linesChoices linesChoices">
         <input type="checkbox" id="choiceOne">
         <label for="choiceOne">Du vide</label>
       </p>
-      <p class="linesChoices">
+      <p class="thirdScreen__linesChoices linesChoices">
         <input type="checkbox" id="choiceTwo">
         <label for="choiceTwo">De la tristesse</label>
       </p>
-      <p class="linesChoices">
+      <p class="thirdScreen__linesChoices linesChoices">
         <input type="checkbox" id="choiceThree">
         <label for="choiceThree">De la peur</label>
       </p>
-      <p class="linesChoices">
+      <p class="thirdScreen__linesChoices linesChoices">
         <input type="checkbox" id="choiceFour">
         <label for="choiceFour">Lorem</label>
       </p>
-      <p class="linesChoices">
+      <p class="thirdScreen__linesChoices linesChoices">
         <input type="checkbox" id="choiceFive">
         <label for="choiceFive">Lorem</label>
       </p>
-      <button class="mainButton" (click)="goToNextSlide()">Valider</button>
+      <button class="thirdScreen__button mainButton" (click)="goToNextSlide()">Valider</button>
     </ion-slide>
 
     <ion-slide class="fourthScreen">
-      <h4 class="question">Vous avez sélectionné une des options ?</h4>
-      <h2 class="mainTitle">Bravo vous avez compris l'oeuvre !</h2>
-      <button class="mainButton" (click)="goToNextSlide()">Ah bon ?</button>
+      <h4 class="fourthScreen__title topTitle">Vous avez sélectionné une des options ?</h4>
+      <h2 class="fourthScreen__secondTitle mainTitle">Bravo vous avez compris l'oeuvre !</h2>
+      <button class="fourthScreen__button mainButton" (click)="goToNextSlide()">Ah bon ?</button>
     </ion-slide>
 
     <ion-slide class="fifthScreen">

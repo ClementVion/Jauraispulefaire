@@ -1,0 +1,45 @@
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+  padding: 0 21px;
+  position: relative;
+  cursor: pointer;
+  font-family: "DIN Pro";
+  font-size: 26px;
+  line-height: 35px;
+  color: #000000;
+}
+
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:checked + label:before {
+  background-color: #0019FF;
+  border: none;
+  content: '';
+  position: absolute;
+  left:0; top: 2px;
+  width: 17px; height: 17px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  width: 42px;
+  height: 42px;
+  transition: all .2s;
+}
+
+[type="radio"]:checked + label:before {
+}
+
+[type="radio"]:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  border: 2px solid #FFF;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
