@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
-import { ArtworksPage } from '../artworks/artworks';
+import { ArtworksPageKlein } from '../artworks/klein/klein';
+import { ArtworksPageNewman } from '../artworks/newman/newman';
 
 
 @Component({
@@ -13,10 +14,15 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {}
 
-  goToArtworks() {
-    //push another page onto the history stack
-    //causing the nav controller to animate the new page in
-    this.navCtrl.push(ArtworksPage);
+  goToArtworks(artist) {
+    switch(artist) {
+      case 'klein':
+        this.navCtrl.push(ArtworksPageKlein);
+        break;
+      case 'newman':
+        this.navCtrl.push(ArtworksPageNewman);
+        break;
+    }
   }
 
   homeSlideOptions = {

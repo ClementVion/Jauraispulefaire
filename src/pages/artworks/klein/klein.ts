@@ -5,11 +5,11 @@ import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 
 
 @Component({
-  selector: 'page-artworks',
-  templateUrl: 'artworks.html'
+  selector: 'page-artworks-klein',
+  templateUrl: 'klein.html'
 })
 
-export class ArtworksPage {
+export class ArtworksPageKlein {
 
   constructor(public navCtrl: NavController) {}
 
@@ -37,7 +37,7 @@ export class ArtworksPage {
   isDrawing = false;
 
   @ViewChild(SignaturePad) signaturePad: SignaturePad;
-  signaturePadOptions: Object = { // Check out https://github.com/szimek/signature_pad
+  signaturePadOptions: Object = {
     'minWidth': 40,
     'canvasWidth': 267,
     'canvasHeight': 370,
@@ -52,5 +52,6 @@ export class ArtworksPage {
   drawStart() {
     this.isDrawing = true;
   }
+
 
 }

@@ -2,14 +2,16 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ArtworksPage } from '../pages/artworks/artworks';
+import { ArtworksPageKlein } from '../pages/artworks/klein/klein';
+import { ArtworksPageNewman } from '../pages/artworks/newman/newman';
 import { SignaturePadModule } from 'angular2-signaturepad';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ArtworksPage
+    ArtworksPageKlein,
+    ArtworksPageNewman
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -19,7 +21,8 @@ import { SignaturePadModule } from 'angular2-signaturepad';
   entryComponents: [
     MyApp,
     HomePage,
-    ArtworksPage
+    ArtworksPageKlein,
+    ArtworksPageNewman
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
