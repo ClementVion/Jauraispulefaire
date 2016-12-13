@@ -3,6 +3,7 @@
   height: 60px;
   margin: 0 80px;
   text-align: left;
+  font-family: $mainFont;
 }
 
 /* Base for label styling */
@@ -16,7 +17,7 @@
   position: relative;
   padding: 6px 70px;
   cursor: pointer;
-  font-family: "DIN Pro";
+  font-family: $mainFont;
   font-size: 26px;
   line-height: 35px;
   color: #000000;
