@@ -3,8 +3,15 @@
   <ion-slides #mySlider [options]="mySlideOptions">
 
     <ion-slide class="firstScreen">
-      <h2 class="firstScreen__title mainTitle">Placez vous devant l'oeuvre</h2>
+      <h4 class="firstScreen__topTitle topTitle">Vous vous apprêtez à vivre une expérience avec IKB 3 de Yves Klein</h4>
+      <h2 class="firstScreen__title mainTitle mainTitle--white">Placez vous devant l'oeuvre</h2>
       <button class="firstScreen__button mainButton" (click)="goToNextSlide()">Ok</button>
+    </ion-slide>
+
+    <ion-slide class="beforeSecondScreen">
+      <h2 class="beforeSecondScreen__title mainTitle mainTitle--white">Préparez <br> vous !</h2>
+      <h4 class="beforeSecondScreen__subitle subtitle">Nous vous confions la lourde tâche de reproduire cette oeuvre.</h4>
+      <button class="beforeSecondScreen__button mainButton" (click)="goToNextSlide()">C'est parti !</button>
     </ion-slide>
 
     <ion-slide class="secondScreen">
@@ -31,7 +38,7 @@
     </ion-slide>
 
     <ion-slide class="thirdScreen">
-      <h2 class="thirdScreen__title topTitle">Que ressentez-vous face à cette oeuvre ?</h2>
+      <h2 class="thirdScreen__title topTitle">Que voyez vous dans IKB 3 ?</h2>
       <p class="thirdScreen__linesChoices linesChoices">
         <input type="checkbox" id="choiceOne">
         <label for="choiceOne">Du vide</label>
@@ -63,37 +70,37 @@
 
     <ion-slide class="fifthScreen">
       <ion-scroll  zooming="true" scrollY="true" style="width: 100%; height: 100vh">
-        <h2 class="fifthScreen__bigText">Klein est un artiste de la couleur</h2>
-        <p class="fifthScreen__subtitle">CHERCHANT DES SENTIMENTS EN CHACUNE
-          D’ELLES EN MULTIPLIANT LES MONOCHROMES</p>
-        <div class="fifthScreen__flatGrey"></div>
-        <h2 class="fifthScreen__bigText">Peu à peu, son choix se porta vers </h2>
+        <img class="fifthScreen__brush fifthScreen__brush--first" src="../../assets/img/brushstroke1.png" alt="">
+        <img class="fifthScreen__brush fifthScreen__brush--second" src="../../assets/img/brushstroke2.png" alt="">
+        <img class="fifthScreen__brush fifthScreen__brush--third" src="../../assets/img/brushstroke3.png" alt="">
+        <img class="fifthScreen__brush fifthScreen__brush--fourth" src="../../assets/img/brushstroke4.png" alt="">
+        <img class="fifthScreen__brush fifthScreen__brush--fifth" src="../../assets/img/pigment.png" alt="">
+        <img class="fifthScreen__brush fifthScreen__brush--sixth" src="../../assets/img/pigment.png" alt="">
+        <h2 class="fifthScreen__bigText">Klein est un artiste de la <span class="coloredBlue">couleur.</span></h2>
+        <p class="fifthScreen__subtitle">Cherchant des sentiments en chacune d'entre elles, en multipliant les monochromes</p>
+        <!-- <div class="fifthScreen__flatGrey"></div> -->
+        <h2 class="fifthScreen__bigText"> <span class="coloredBlue">Peu à peu son choix se </span> <span class="coloredWhite"> porta vers</span> </h2>
         <div class="fifthScreen__flatBlueText">
           <h3>Le bleu</h3>
         </div>
-        <h2 class="fifthScreen__bigText fifthScreen__bigText--little">Pourquoi le bleu ?</h2>
+        <h2 class="fifthScreen__bigText fifthScreen__bigText--narrow">Pourquoi <span class="coloredBlue">le bleu ?</span></h2>
+        <div class="fifthScreen__flatGreyText fifthScreen__flatGreyText--right">
+          <!-- <h3>Mer</h3> -->
+        </div>
+        <div class="fifthScreen__flatGreyText">
+          <!-- <h3>Ciel</h3> -->
+        </div>
         <p class="fifthScreen__quote">"Toutes les couleurs amènent des associations
           d’idées concrètes, matérielles et tangibles, tandis que le bleu rappelle
           tout au plus la mer et le ciel, ce qu’il y a de plus abstrait dans la
           nature tangible et visible."</p>
-        <div class="fifthScreen__flatGreyText fifthScreen__flatGreyText--right">
-          <h3>Mer</h3>
-        </div>
-        <div class="fifthScreen__flatGreyText">
-          <h3>Ciel</h3>
-        </div>
-        <div class="fifthScreen__flatBlue"></div>
-        <div class="fifthScreen__flatBlue fifthScreen__flatBlue--right "></div>
-        <h2 class="fifthScreen__bigTextWhite fifthScreen__bigText--white">LE BLEU vide, profond, nous absorbe
-          comme une éponge.</h2>
-        <div class="fifthScreen__bigImage">
-          <img src="#" alt="">
-        </div>
-        <h2 class="fifthScreen__bigText">D'ailleurs... retournez vous</h2>
-        <h2 class="fifthScreen__bigText">Wording pigment peinture unique</h2>
-        <div class="fifthScreen__littleImage">
-          <img src="#" alt="">
-        </div>
+        <img class="fifthScreen__flatBlue" src="../../assets/img/flatbluesponge.png">
+        <h2 class="fifthScreen__bigTextWhite fifthScreen__bigText--narrowWhite">LE BLEU vide, profond, nous absorbe comme une éponge.</h2>
+        <h4 class="fifthScreen__rotateText">L'arbre éponge, 1960</h4>
+        <div class="fifthScreen__blueStroke"></div>
+        <h2 class="fifthScreen__bigText fifthScreen__bigText--white">D'ailleurs... retournez vous</h2>
+        <h2 class="fifthScreen__bigText fifthScreen__bigText--narrow fifthScreen__bigText--margin">LA PEINTURE DE KLEIN EST UNIQUE POUR SON MÉLANGE SATURÉ EN PIGMENTS</h2>
+        <p class="fifthScreen__subtitle fifthScreen__subtitle--narrow">Sa vibrance et sa texture ne peuvent être éprouvées qu’en réalité</p>
         <button class="fifthScreen__button mainButton" (click)="goToNextSlide()">Testez !</button>
       </ion-scroll>
     </ion-slide>

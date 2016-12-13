@@ -1,6 +1,15 @@
 ion-slide {
   position: relative;
   font-family: $mainFont;
+  color: $mainColor;
+}
+
+.firstScreen {
+  background-color: #231b63;
+}
+
+.beforeSecondScreen {
+  background-color: #231b63;
 }
 
 .secondScreen {

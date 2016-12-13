@@ -1,7 +1,7 @@
-import { Component, ViewChild } from '@angular/core';
-import { Slides } from 'ionic-angular';
+import { Component/*, ViewChild*/ } from '@angular/core';
+// import { Slides } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
-import { SignaturePad } from 'angular2-signaturepad/signature-pad';
+// import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 
 
 @Component({

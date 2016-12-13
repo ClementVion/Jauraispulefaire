@@ -1,7 +1,7 @@
 .linesChoices {
-  width: 240px;
+  width: 300px;
   height: 60px;
-  margin: 0 80px;
+  margin: 0 0 0 70px;
   text-align: left;
   font-family: $mainFont;
 }
@@ -15,7 +15,7 @@
 [type="checkbox"]:not(:checked) + label,
 [type="checkbox"]:checked + label {
   position: relative;
-  padding: 6px 70px;
+  padding: 6px 0px 0 80px;
   cursor: pointer;
   font-family: $mainFont;
   font-size: 26px;
@@ -31,7 +31,7 @@
   left:0; top: 2px;
   width: 17px; height: 17px;
   border-radius: 50%;
-  border: 2px solid #D6D5D5;
+  border: 2px solid $mainColor;
   box-sizing: border-box;
   width: 42px;
   height: 42px;
@@ -39,7 +39,25 @@
 }
 
 /* checked mark aspect changes */
-[type="checkbox"]:checked + label:before {
-  background-color: #BBB9B9;
+[type="checkbox"]:not(:checked) + label:after {
+  position: absolute;
+  opacity: 0;
   transition: all .2s;
+  width: 81px;
+  height: 51px;
+  left: -20px;
+  top: 2px;
+}
+
+[type="checkbox"]:checked + label:after {
+  position: absolute;
+  transition: all .2s;
+  width: 81px;
+  height: 51px;
+  left: -20px;
+  top: 2px;
+  content: '';
+  background-image: url(../../assets/img/checked.png);
+  transition: all .2s;
+  opacity: 1;
 }

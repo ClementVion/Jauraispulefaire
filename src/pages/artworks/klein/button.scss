@@ -1,11 +1,10 @@
 .mainButton {
   width: 238px;
   height: 48px;
-  background-color: #EFEFEF;
+  background-color: transparent;
   border-radius: 100px;
   text-transform: uppercase;
-  font-family: "DIN Pro";
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   text-align: center;
   line-height: 29px;
@@ -13,4 +12,13 @@
   bottom: 20px;
   left: calc(50% - 119px);
   font-family: $mainFont;
+  border: 2px solid $mainColor;
+  color: $mainColor;
+}
+
+.firstScreen .mainButton,
+.beforeSecondScreen .mainButton {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFF;
 }
