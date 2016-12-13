@@ -19,4 +19,9 @@ export class HomePage {
     this.navCtrl.push(ArtworksPage);
   }
 
+  homeSlideOptions = {
+    initialSlide: 0,
+    pager: true
+  };
+
 }

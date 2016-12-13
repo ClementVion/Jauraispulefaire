@@ -1,3 +1,79 @@
-page-home {
+.home__title {
+  width: 100%;
+  font-family: $mainFont;
+  font-size: 20px;
+  text-align: center;
+  line-height: 24px;
+  color: #FFFFFF;
+  top: 33px;
+  position: fixed;
+  z-index: 2;
+}
 
+.home__artworks {
+  position: relative;
+}
+.home__artworks--first {
+  background-image: url('../../assets/img/artwork_ikb_bg.png');
+}
+.home__artworks--second {
+  background-image: url('../../assets/img/artwork_barnett_bg.png');
+}
+.home__artworks--third {
+  background-image: url('../../assets/img/artwork_green_bg.png');
+}
+
+.home__artworkName {
+  width: 273px;
+  left: calc(50% - 136.5px);
+  position: absolute;
+  font-family: "Dry Brush";
+  font-size: 70px;
+  text-align: center;
+  line-height: 98px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.home__artworkName--narrow {
+  width: 130px;
+  left: calc(50% - 65px);
+}
+
+.home__artworkName--bottom {
+  color: #282575;
+}
+
+.home__artworkCard {
+  margin-top: 100px;
+}
+
+.home__artworkButton {
+  width: 238px;
+  height: 48px;
+  border-radius: 100px;
+  border: solid thin #FFF;
+  text-transform: uppercase;
+  font-family: $mainFont;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 29px;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 119px);
+  color: #FFF;
+  background: none;
+  padding: 12px;
+}
+
+.swiper-pagination {
+  margin-bottom: 60px;
+}
+.swiper-pagination-bullet {
+  background: #FFF;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }

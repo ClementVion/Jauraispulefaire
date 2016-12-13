@@ -1,22 +1,31 @@
+<ion-content class="home">
 
+  <h1 class="home__title">Choisissez une oeuvre</h1>
 
-<ion-content>
+  <ion-slides #homeSlider [options]="homeSlideOptions">
 
-  <h1>Choisissez votre oeuvre</h1>
-
-  <ion-slides pager padding-vertical style="height:80vh">
-
-    <ion-slide style="background-color: green" (click)="goToArtworks()">
-      <h2>Slide 1</h2>
-      <img src="http://lorempixel.com/400/200/" alt="">
+    <ion-slide class="home__artworks home__artworks--first">
+      <h2 class="home__artworkName home__artworkName--narrow">
+        IKB<span class="home__artworkName--bottom">N°3</span>
+      </h2>
+      <img class="home__artworkCard" src="../../assets/img/artwork_ikb_card.png">
+      <button class="home__artworkButton" (click)="goToArtworks()">Trop facile !</button>
     </ion-slide>
 
-    <ion-slide style="background-color: blue" (click)="goToArtworks()">
-      <h2>Slide 2</h2>
+    <ion-slide class="home__artworks home__artworks--second">
+      <h2 class="home__artworkName">
+        Shining Forth
+      </h2>
+      <img class="home__artworkCard" src="../../assets/img/artwork_barnett_card.png">
+      <button class="home__artworkButton" (click)="goToArtworks()">C'est une blague ?</button>
     </ion-slide>
 
-    <ion-slide style="background-color: red" (click)="goToArtworks()">
-      <h2>Slide 3</h2>
+    <ion-slide class="home__artworks home__artworks--third">
+      <h2 class="home__artworkName">
+        Green Relief
+      </h2>
+      <img class="home__artworkCard" src="../../assets/img/artwork_green_card.png">
+      <button class="home__artworkButton" (click)="goToArtworks()">C'est original...</button>
     </ion-slide>
 
   </ion-slides>

@@ -9,6 +9,7 @@
   text-transform: uppercase;
   position: relative;
   z-index: 1;
+  font-family: $mainFont;
 }
 
 .fifthScreen__bigText--narrow {
@@ -29,6 +30,7 @@
 }
 
 .fifthScreen__subtitle {
+  font-family: $mainFont;
   width: 337px;
   font-size: 20px;
   text-align: center;
@@ -62,7 +64,7 @@
     width: 169px;
     height: 212px;
     opacity: 0.31;
-    font-family: "DIN Condensed";
+    font-family: $mainFont;
     font-size: 106px;
     font-weight: bold;
     text-align: center;
@@ -76,6 +78,7 @@
 }
 
 .fifthScreen__quote {
+  font-family: $mainFont;
   width: 314px;
   margin: auto;
   font-size: 20px;
@@ -96,6 +99,7 @@
   margin-top: -170px;
 
   h3 {
+    font-family: $mainFont;
     opacity: 0.05;
     text-transform: uppercase;
     font-size: 93px;
@@ -130,6 +134,7 @@
 }
 
 .fifthScreen__button.mainButton {
+  font-family: $mainFont;
   position: relative;
   bottom: 11px;
   margin: auto;
