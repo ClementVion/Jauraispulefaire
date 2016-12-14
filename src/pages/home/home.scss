@@ -1,3 +1,34 @@
+ion-slides {
+  height: 100vh;
+}
+
+
+.landingScreen__title {
+  width: 231px;
+  font-family: $secondFont;
+  font-size: 57px;
+  text-align: center;
+  line-height: 84px;
+  color: #000000;
+  position: absolute;
+  top: 120px;
+  left: calc(50% - 115.5px);
+  text-transform: uppercase;
+}
+
+.landingScreen__subtitle {
+  width: 240px;
+  font-family: "DIN Pro Cond";
+  font-size: 24px;
+  text-align: center;
+  line-height: 28px;
+  position: absolute;
+  left: calc(50% - 120px);
+  color: #000000;
+  top: 390px;
+}
+
+
 .home__title {
   width: 100%;
   font-family: $mainFont;

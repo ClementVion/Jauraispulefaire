@@ -4,30 +4,41 @@
 
   <ion-slides #homeSlider [options]="homeSlideOptions">
 
-    <ion-slide class="home__artworks home__artworks--first">
-      <h2 class="home__artworkName home__artworkName--narrow">
-        IKB<span class="home__artworkName--bottom">N°3</span>
-      </h2>
-      <img class="home__artworkCard" src="assets/img/artwork_ikb_card.png">
-      <button class="home__artworkButton" (click)="goToArtworks('klein')">Trop facile !</button>
+    <ion-slide class="landingScreen">
+      <h1 class="landingScreen__title">J'aurais pu le faire !</h1>
+      <p class="landingScreen__subtitle">Le guide qui va dans votre sens</p>
+      <button class="mainButton" (tap)="goToNextSlide()">Commencer</button>
     </ion-slide>
 
-    <ion-slide class="home__artworks home__artworks--second">
-      <h2 class="home__artworkName">
-        Shining Forth
-      </h2>
-      <img class="home__artworkCard" src="assets/img/artwork_barnett_card.png">
-      <button class="home__artworkButton" (click)="goToArtworks('newman')">C'est une blague ?</button>
-    </ion-slide>
+    <ion-slide>
+      <ion-slides #artworksSlider [options]="artworksSlideOptions">
 
-    <ion-slide class="home__artworks home__artworks--third">
-      <h2 class="home__artworkName">
-        Green Relief
-      </h2>
-      <img class="home__artworkCard" src="assets/img/artwork_green_card.png">
-      <button class="home__artworkButton" (click)="goToArtworks('green')">C'est original...</button>
-    </ion-slide>
+        <ion-slide class="home__artworks home__artworks--first">
+          <h2 class="home__artworkName home__artworkName--narrow">
+            IKB<span class="home__artworkName--bottom">N°3</span>
+          </h2>
+          <img class="home__artworkCard" src="assets/img/artwork_ikb_card.png">
+          <button class="home__artworkButton" (click)="goToArtworks('klein')">Trop facile !</button>
+        </ion-slide>
 
+        <ion-slide class="home__artworks home__artworks--second">
+          <h2 class="home__artworkName">
+            Shining Forth
+          </h2>
+          <img class="home__artworkCard" src="assets/img/artwork_barnett_card.png">
+          <button class="home__artworkButton" (click)="goToArtworks('newman')">C'est une blague ?</button>
+        </ion-slide>
+
+        <ion-slide class="home__artworks home__artworks--third">
+          <h2 class="home__artworkName">
+            Green Relief
+          </h2>
+          <img class="home__artworkCard" src="assets/img/artwork_green_card.png">
+          <button class="home__artworkButton" (click)="goToArtworks('green')">C'est original...</button>
+        </ion-slide>
+
+      </ion-slides>
+    </ion-slide>
   </ion-slides>
 
 </ion-content>
