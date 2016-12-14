@@ -1,4 +1,4 @@
-.fifthScreen__bigText {
+.fifthScreenKlein__bigText {
   width: 322px;
   font-size: 66px;
   text-align: center;
@@ -22,14 +22,14 @@
   }
 }
 
-.fifthScreen__bigText--narrow {
+.fifthScreenKlein__bigText--narrow {
   width: 243px;
   margin-top: 50px;
   font-weight: 500;
   padding: 0;
 }
 
-.fifthScreen__bigText--white {
+.fifthScreenKlein__bigText--white {
   width: 293px;
   font-size: 62px;
   text-align: center;
@@ -42,7 +42,7 @@
   text-transform: uppercase;
 }
 
-.fifthScreen__bigText--narrowWhite {
+.fifthScreenKlein__bigText--narrowWhite {
   width: 243px;
   margin: 120px auto 0 auto;
   font-size: 62px;
@@ -56,11 +56,11 @@
   text-transform: uppercase;
 }
 
-.fifthScreen__bigText--margin {
+.fifthScreenKlein__bigText--margin {
   margin-top: 310px;
 }
 
-.fifthScreen__subtitle {
+.fifthScreenKlein__subtitle {
   width: 327px;
   margin: auto;
   font-family: $mainFont;
@@ -71,11 +71,11 @@
   color: #000000;
 }
 
-.fifthScreen__subtitle--narrow {
+.fifthScreenKlein__subtitle--narrow {
   width: 227px;
 }
 
-.fifthScreen__flatGrey {
+.fifthScreenKlein__flatGrey {
   width: 100%;
   height: 475.37px;
   background-color: #D8D8D8;
@@ -85,7 +85,7 @@
   margin-top: 240px;
 }
 
-.fifthScreen__flatBlueText {
+.fifthScreenKlein__flatBlueText {
   position: relative;
   width: 267px;
   height: 374px;
@@ -112,7 +112,7 @@
   }
 }
 
-.fifthScreen__quote {
+.fifthScreenKlein__quote {
   font-family: $mainFont;
   width: 314px;
   margin: 420px auto 0 auto;
@@ -124,7 +124,7 @@
   z-index: 1;
 }
 
-.fifthScreen__flatGreyText {
+.fifthScreenKlein__flatGreyText {
   position: absolute;
   width: 292px;
   height: 180px;
@@ -147,13 +147,13 @@
   }
 }
 
-.fifthScreen__flatGreyText--right {
+.fifthScreenKlein__flatGreyText--right {
   background-image: url('../assets/img/mer.png');
   right: 0;
   margin-top: 170px;
 }
 
-.swiper-slide img.fifthScreen__flatBlue {
+.swiper-slide img.fifthScreenKlein__flatBlue {
   width: 100%;
   position: absolute;
   max-height: none;
@@ -162,7 +162,7 @@
   margin-top: 40px;
 }
 
-.fifthScreen__rotateText {
+.fifthScreenKlein__rotateText {
   font-family: $mainFont;
   font-size: 24px;
   line-height: 29px;
@@ -174,7 +174,7 @@
   text-transform: uppercase;
 }
 
-.fifthScreen__blueStroke {
+.fifthScreenKlein__blueStroke {
   width: 2px;
   background: #281D70;
   height: 170px;
@@ -183,7 +183,7 @@
   right: 20px;
 }
 
-.fifthScreen__button.mainButton {
+.fifthScreenKlein__button.mainButton {
   font-family: $mainFont;
   position: relative;
   bottom: 30px;
@@ -191,42 +191,42 @@
   left: 0;
 }
 
-.swiper-slide img.fifthScreen__brush {
+.swiper-slide img.fifthScreenKlein__brush {
   position: absolute;;
   z-index: 0;
 }
 
-.swiper-slide img.fifthScreen__brush--first {
+.swiper-slide img.fifthScreenKlein__brush--first {
   width: 168px;
   left: 0;
   margin-top: 40px;
 }
 
-.swiper-slide img.fifthScreen__brush--second {
+.swiper-slide img.fifthScreenKlein__brush--second {
   width: 155px;
   right: 0;
   margin-top: 40px;
 }
 
-.swiper-slide img.fifthScreen__brush--third {
+.swiper-slide img.fifthScreenKlein__brush--third {
   width: 125px;
   margin-top: 280px;
   left: 0;
 }
 
-.swiper-slide img.fifthScreen__brush--fourth {
+.swiper-slide img.fifthScreenKlein__brush--fourth {
   width: 355px;
   margin-top: 730px;
   left: 20px;
 }
 
-.swiper-slide img.fifthScreen__brush--fifth {
+.swiper-slide img.fifthScreenKlein__brush--fifth {
   width: 103px;
   right: 0;
   margin-top: 3940px;
 }
 
-.swiper-slide img.fifthScreen__brush--sixth {
+.swiper-slide img.fifthScreenKlein__brush--sixth {
   width: 103px;
   left: 0;
   transform: rotate(176deg);

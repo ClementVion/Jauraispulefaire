@@ -1,0 +1,28 @@
+.topTitleBrush {
+  color: #000;
+}
+
+.thirdScreenNewman__chooseTitle {
+  font-size: 24px;
+  text-align: center;
+  line-height: 29px;
+  color: #000000;
+}
+
+.fourthScreenNewman__title.mainTitle {
+  width: 260px;
+  position: absolute;
+  left: calc(50% - 130px);
+  top: 50px;
+}
+
+.fourthScreenNewman__subtitle {
+  width: 307px;
+  margin: 120px auto 0 auto;
+  font-family: "DIN Pro";
+  font-size: 25px;
+  text-align: center;
+  line-height: 29px;
+  color: #FFFFFF;
+  font-family: $mainFont;
+}

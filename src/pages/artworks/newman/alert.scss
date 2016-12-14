@@ -1,0 +1,50 @@
+.greetingsDialog {
+
+  .alert-wrapper {
+    border-radius: 3px;
+    min-width: 310px;
+  }
+
+  .alert-title{
+    font-size: 63px;
+    line-height: 123px;
+    color: $secondColor;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $secondFont;
+  }
+
+  .alert-sub-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .alert-button-group {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+
+  .greetingsDialog__button {
+    width: 100%;
+    margin: 5px auto 5px auto;
+    text-align: center;
+    color: #FFF;
+    background: $secondColor;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: $mainFont;
+    font-size: 24px;
+    height: 54px;
+  }
+
+  .customAlert__button .button-inner {
+    justify-content: center;
+    font-family: $mainFont;
+    font-size: 24px;
+    text-align: center;
+    line-height: 29px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+}

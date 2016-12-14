@@ -1,7 +1,33 @@
 <ion-content>
 
+  <ion-slides #newmanSlider [options]="mySlideOptions">
 
-  <h1>Barnett Newman</h1>
+    <ion-slide class="firstScreenNewman">
+      <h2 class="firstScreenNewman__title mainTitle mainTitle--white">Placez vous devant l'oeuvre</h2>
+      <button class="firstScreenNewman__button mainButton" (tap)="goToNextSlide()">Ok</button>
+    </ion-slide>
+    <ion-slide class="secondScreenNewman">
+      <h2 class="secondScreenNewman__title mainTitle mainTitle--white">Préparez vous !</h2>
+      <p class="secondScreenNewman__subtitle subtitle">Oups, trois traits de peintures sont malencontreusement tombés sur la toile. Restaurez-la !</p>
+      <button class="secondScreenNewman__button mainButton" (tap)="goToNextSlide()">Ok</button>
+    </ion-slide>
+    <ion-slide class="thirdScreenNewman">
+      <h2 class="thirdScreenNewman__title topTitleBrush">A vous de jouer !</h2>
+      <!-- <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad> -->
+      <div class="thirdScreenNewman__bottom">
+        <h4 class="thirdScreenNewman__chooseTitle">Choisissez une couleur</h4>
+        <button class="thirdScreenNewman__button mainButton" (tap)="showGreetings()">J'ai terminé</button>
+      </div>
+    </ion-slide>
+    <ion-slide class="fourthScreenNewman">
+      <h2 class="fourthScreenNewman__title mainTitle mainTitle--white">Vous y avez cru ?</h2>
+      <p class="fourthScreenNewman__subtitle">Vous avez bien devant vous l’oeuvre originale. Cela dit, saviez-vous que cette toile n’a pas pu être exposée pendant 25 ans ? Tout cela à cause de quelques malencontreuses tâches d’huiles provenant d’un engin de manutention.
+        Cette oeuvre majeure de l’artiste a fait l’objet d’une restauration délicate dans le but d’inspirer à nouveau des visiteurs comme vous.
+      </p>
+    <button class="secondScreenNewman__button mainButton" (tap)="goToNextSlide()">Que signifie-t-elle ?</button>
+    </ion-slide>
+
+  </ion-slides>
 
 
 </ion-content>

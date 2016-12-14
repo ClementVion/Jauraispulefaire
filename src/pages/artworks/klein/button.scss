@@ -1,8 +1,9 @@
 .mainButton {
   width: 238px;
-  height: 48px;
+  height: 55px;
   background-color: transparent;
-  border-radius: 100px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 700;
@@ -12,14 +13,12 @@
   bottom: 20px;
   left: calc(50% - 119px);
   font-family: $mainFont;
-  border: 2px solid $mainColor;
   color: $mainColor;
 }
 
-.firstScreen .mainButton,
-.beforeSecondScreen .mainButton,
-.sixthScreen .mainButton{
-  background-color: transparent;
-  border: 2px solid #FFFFFF;
-  color: #FFF;
+.firstScreenKlein .mainButton,
+.beforeSecondScreenKlein .mainButton,
+.sixthScreenKlein .mainButton{
+  background-color: #FFF;
+  color: $mainColor;
 }

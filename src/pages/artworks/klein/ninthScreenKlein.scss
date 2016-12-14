@@ -1,0 +1,55 @@
+.swiper-slide img.ninthScreenKlein__monochrome {
+  width: 314px;
+  position: absolute;
+  z-index: 0;
+  top: 120px;
+  left: calc(50% - 157px);
+}
+
+.ninthScreenKlein__icon {
+  position: absolute;
+  z-index: 1;
+  color: #FFF;
+  font-size: 126px;
+  left: calc(50% - 31.5px);
+  top: 270px;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: triggerSong;
+  animation-duration: 1s;
+}
+
+@keyframes triggerSong {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.ninthScreenKlein__card {
+  position: absolute;
+  top: 240px;
+  left: calc(50% - 114.5px);
+}
+
+.ninthScreenKlein__instructions {
+  width: 264px;
+  font-family: $mainFont;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 29px;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 132px);
+  top: 120px;
+}

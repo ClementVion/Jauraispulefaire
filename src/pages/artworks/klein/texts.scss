@@ -1,9 +1,9 @@
 .mainTitle {
   width: 270px;
-  font-size: 52px;
-  font-weight: 700;
+  font-size: 66px;
+  font-weight: 500;
   text-align: center;
-  line-height: 66px;
+  line-height: 78px;
   color: $mainColor;
   margin: auto;
   text-transform: uppercase;
@@ -39,7 +39,7 @@
   color: #000;
 }
 
-.firstScreen .topTitle {
+.firstScreenKlein .topTitle {
   font-size: 25px;
   text-align: center;
   line-height: 29px;
@@ -61,18 +61,4 @@
 
 .subtitle--black {
   color: #000;
-}
-
-.ninthScreen__instructions {
-  width: 264px;
-  font-family: $mainFont;
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 29px;
-  color: #FFFFFF;
-  position: absolute;
-  z-index: 1;
-  left: calc(50% - 132px);
-  top: 120px;
 }
