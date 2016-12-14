@@ -16,9 +16,9 @@
     <ion-slide class="thirdScreenNewman">
       <img src="assets/img/escape_black.svg" alt="" class="goHome" (tap)="showConfirm()">
       <h2 class="thirdScreenNewman__title topTitleBrush">A vous de jouer !</h2>
-      <!-- <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad> -->
+      <signature-pad class="newman" [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
       <div class="thirdScreenNewman__bottom">
-        <h4 class="thirdScreenNewman__chooseTitle">Choisissez une couleur</h4>
+        <h4 class="thirdScreenNewman__chooseTitle">Gommez du doigt les lignes sur la toile</h4>
         <button class="thirdScreenNewman__button mainButton" (tap)="showGreetings()">J'ai terminé</button>
       </div>
     </ion-slide>

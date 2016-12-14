@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
-// import { SignaturePad } from 'angular2-signaturepad/signature-pad';
+import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 import { AlertController } from 'ionic-angular';
 
 
@@ -79,6 +79,29 @@ export class ArtworksPageNewman {
       ]
     });
     alert.present();
+  }
+
+  /**
+   * Canvas
+   */
+
+  signature = '';
+  isDrawing = false;
+
+  @ViewChild(SignaturePad) signaturePad: SignaturePad;
+  signaturePadOptions: Object = {
+    'minWidth': 20,
+    'canvasWidth': 377,
+    'canvasHeight': 246,
+    'penColor': '#C7B796'
+  };
+
+  drawComplete() {
+    this.isDrawing = false;
+  }
+
+  drawStart() {
+    this.isDrawing = true;
   }
 
 
