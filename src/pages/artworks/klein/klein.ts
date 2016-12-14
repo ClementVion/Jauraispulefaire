@@ -16,7 +16,7 @@ export class ArtworksPageKlein {
               public alertCtrl: AlertController) {}
 
   /**
-   * SLIDER
+   * Slider
    */
 
   @ViewChild('mySlider') slider: Slides;
@@ -30,9 +30,13 @@ export class ArtworksPageKlein {
     this.slider.slideNext(300);
   }
 
+  endExperience() {
+    this.navCtrl.pop(ArtworksPageKlein);
+  }
+
 
   /**
-   * CANVAS
+   * Canvas
    */
 
   signature = '';
@@ -78,6 +82,20 @@ export class ArtworksPageKlein {
       ]
     });
     confirm.present();
+  }
+
+  /**
+   * Audio player
+   */
+
+  triggerSong(audioPlayer) {
+    if(audioPlayer.classList.contains('playing')) {
+      audioPlayer.pause();
+      audioPlayer.classList.remove('playing');
+    } else {
+      audioPlayer.play();
+      audioPlayer.classList.add('playing');
+    }
   }
 
 }

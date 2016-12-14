@@ -4,14 +4,18 @@ ion-slide {
   color: $mainColor;
 }
 
-.firstScreen {
-  background-color: #231b63;
-}
-
-.beforeSecondScreen {
+.firstScreen, .beforeSecondScreen, .sixthScreen  {
   background-color: #231b63;
 }
 
 .secondScreen {
   background-color: #EFEFEF;
+}
+
+.swiper-slide img.ninthScreen__monochrome {
+  width: 314px;
+  position: absolute;
+  z-index: 0;
+  top: 120px;
+  left: calc(50% - 157px);
 }

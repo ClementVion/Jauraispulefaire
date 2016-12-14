@@ -63,6 +63,16 @@
   color: #000;
 }
 
-.secondScreen__chooseTitle {
-
+.ninthScreen__instructions {
+  width: 264px;
+  font-family: $mainFont;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 29px;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 132px);
+  top: 120px;
 }
