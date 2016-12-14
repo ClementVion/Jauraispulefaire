@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
 import { SignaturePad } from 'angular2-signaturepad/signature-pad';
+import { AlertController } from 'ionic-angular';
 
 
 @Component({
@@ -11,7 +12,8 @@ import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 
 export class ArtworksPageKlein {
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController,
+              public alertCtrl: AlertController) {}
 
   /**
    * SLIDER
@@ -53,5 +55,29 @@ export class ArtworksPageKlein {
     this.isDrawing = true;
   }
 
+  /**
+   * Go to home dialog
+   */
+
+  showConfirm() {
+    let confirm = this.alertCtrl.create({
+      title: 'Etes-vous sûr de vouloir quitter ?',
+      cssClass: 'customAlert',
+      buttons: [
+        {
+          text: 'Oui',
+          cssClass: 'customAlert__buttons customAlert__buttons--yes',
+          handler: () => {
+            this.navCtrl.pop(ArtworksPageKlein);
+          }
+        },
+        {
+          text: 'Non',
+          cssClass: 'customAlert__buttons customAlert__buttons--no'
+        }
+      ]
+    });
+    confirm.present();
+  }
 
 }

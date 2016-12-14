@@ -3,18 +3,21 @@
   <ion-slides #mySlider [options]="mySlideOptions">
 
     <ion-slide class="firstScreen">
+      <img src="../../assets/img/gohome.svg" alt="" class="goHome" (click)="showConfirm()">
       <h4 class="firstScreen__topTitle topTitle">Vous vous apprêtez à vivre une expérience avec IKB 3 de Yves Klein</h4>
       <h2 class="firstScreen__title mainTitle mainTitle--white">Placez vous devant l'oeuvre</h2>
       <button class="firstScreen__button mainButton" (click)="goToNextSlide()">Ok</button>
     </ion-slide>
 
     <ion-slide class="beforeSecondScreen">
+      <img src="../../assets/img/gohome.svg" alt="" class="goHome" (click)="showConfirm()">
       <h2 class="beforeSecondScreen__title mainTitle mainTitle--white">Préparez <br> vous !</h2>
       <h4 class="beforeSecondScreen__subitle subtitle">Nous vous confions la lourde tâche de reproduire cette oeuvre.</h4>
       <button class="beforeSecondScreen__button mainButton" (click)="goToNextSlide()">C'est parti !</button>
     </ion-slide>
 
     <ion-slide class="secondScreen">
+      <img src="../../assets/img/gohome.svg" alt="" class="goHome" (click)="showConfirm()">
       <h2 class="secondScreen__title topTitleBrush">A vous de jouer !</h2>
       <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
       <div class="secondScreen__bottom">
@@ -38,6 +41,7 @@
     </ion-slide>
 
     <ion-slide class="thirdScreen">
+      <img src="../../assets/img/gohome.svg" alt="" class="goHome" (click)="showConfirm()">
       <h2 class="thirdScreen__title topTitle">Que voyez vous dans IKB 3 ?</h2>
       <p class="thirdScreen__linesChoices linesChoices">
         <input type="checkbox" id="choiceOne">
@@ -63,12 +67,14 @@
     </ion-slide>
 
     <ion-slide class="fourthScreen">
-      <h4 class="fourthScreen__title topTitle">Vous avez sélectionné une des options ?</h4>
+      <img src="../../assets/img/gohome.svg" alt="" class="goHome" (click)="showConfirm()">
+      <h4 class="fourthScreen__title topTitle">Si vous avez sélectionné le moindre de ces choix</h4>
       <h2 class="fourthScreen__secondTitle mainTitle">Bravo vous avez compris l'oeuvre !</h2>
       <button class="fourthScreen__button mainButton" (click)="goToNextSlide()">Ah bon ?</button>
     </ion-slide>
 
     <ion-slide class="fifthScreen">
+      <img src="../../assets/img/gohome.svg" alt="" class="goHome" (click)="showConfirm()">
       <ion-scroll  zooming="true" scrollY="true" style="width: 100%; height: 100vh">
         <img class="fifthScreen__brush fifthScreen__brush--first" src="../../assets/img/brushstroke1.png" alt="">
         <img class="fifthScreen__brush fifthScreen__brush--second" src="../../assets/img/brushstroke2.png" alt="">
@@ -103,6 +109,9 @@
         <p class="fifthScreen__subtitle fifthScreen__subtitle--narrow">Sa vibrance et sa texture ne peuvent être éprouvées qu’en réalité</p>
         <button class="fifthScreen__button mainButton" (click)="goToNextSlide()">Testez !</button>
       </ion-scroll>
+    </ion-slide>
+    <ion-slide class="sixthScreen">
+
     </ion-slide>
 
 </ion-slides>
