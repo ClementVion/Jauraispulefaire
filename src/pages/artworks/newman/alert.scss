@@ -48,3 +48,19 @@
   }
 
 }
+
+.customAlert--newman {
+
+  .alert-title{
+    color: $secondColor;
+  }
+
+  .customAlert__buttons {
+    color: $secondColor;
+  }
+
+  .customAlert__buttons--no {
+    color: #FFF;
+    background: $secondColor;
+  }
+}

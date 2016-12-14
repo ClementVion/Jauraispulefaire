@@ -30,8 +30,8 @@
     margin: 5px auto 5px auto;
     text-align: center;
     color: $mainColor;
-    border: 2px solid #281D70;
-    border-radius: 100px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
   }
 
   .customAlert__buttons--no {

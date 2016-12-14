@@ -43,6 +43,8 @@ ion-slides {
 
 .home__artworks {
   position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .home__artworks--first {
   background-image: url('../assets/img/artwork_ikb_bg.png');
@@ -96,6 +98,10 @@ ion-slides {
   left: calc(50% - 119px);
   background-color: #FFF;
   color: $mainColor;
+}
+
+.home__artworkButton--secondColor {
+  color: $secondColor;
 }
 
 .swiper-pagination {

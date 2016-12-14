@@ -41,7 +41,7 @@ export class ArtworksPageNewman {
   showConfirm() {
     let confirm = this.alertCtrl.create({
       title: 'Etes-vous sûr de vouloir quitter ?',
-      cssClass: 'customAlert',
+      cssClass: 'customAlert customAlert--newman',
       buttons: [
         {
           text: 'Oui',
