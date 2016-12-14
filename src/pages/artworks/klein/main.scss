@@ -19,3 +19,37 @@ ion-slide {
   top: 120px;
   left: calc(50% - 157px);
 }
+
+.ninthScreen__icon {
+  position: absolute;
+  z-index: 1;
+  color: #FFF;
+  font-size: 126px;
+  left: calc(50% - 31.5px);
+  top: 270px;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: triggerSong;
+  animation-duration: 1s;
+}
+
+@keyframes triggerSong {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.ninthScreen__card {
+  position: absolute;
+  top: 240px;
+  left: calc(50% - 114.5px);
+}

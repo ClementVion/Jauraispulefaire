@@ -88,13 +88,21 @@ export class ArtworksPageKlein {
    * Audio player
    */
 
-  triggerSong(audioPlayer) {
+  triggerSong(audioPlayer, playIcon, pauseIcon) {
     if(audioPlayer.classList.contains('playing')) {
       audioPlayer.pause();
       audioPlayer.classList.remove('playing');
+      pauseIcon.style.animation = 'none';
+      setTimeout(function(){
+        pauseIcon.style.animation = "";
+      }, 10);
     } else {
       audioPlayer.play();
       audioPlayer.classList.add('playing');
+      playIcon.style.animation = 'none';
+      setTimeout(function(){
+        playIcon.style.animation = '';
+      }, 10);
     }
   }
 
