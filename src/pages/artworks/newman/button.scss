@@ -1,7 +1,3 @@
-.mainButton {
-
-}
-
 .firstScreenNewman .mainButton,
 .secondScreenNewman .mainButton,
 .fourthScreenNewman .mainButton{
@@ -9,7 +5,14 @@
   background: #FFF;
 }
 
-.thirdScreenNewman .mainButton {
+.thirdScreenNewman .mainButton,
+.fifthScreenNewman .mainButton{
   background: $secondColor;
   color: #FFF;
+}
+
+.fifthScreenNewman .mainButton{
+  bottom: 30px;
+  position: relative;
+  left: 0;
 }

@@ -14,6 +14,7 @@
       <button class="secondScreenNewman__button mainButton" (tap)="goToNextSlide()">Ok</button>
     </ion-slide>
     <ion-slide class="thirdScreenNewman">
+      <img src="assets/img/escape_black.svg" alt="" class="goHome" (tap)="showConfirm()">
       <h2 class="thirdScreenNewman__title topTitleBrush">A vous de jouer !</h2>
       <!-- <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad> -->
       <div class="thirdScreenNewman__bottom">
@@ -30,6 +31,7 @@
     <button class="fourthScreenNewman__button mainButton" (tap)="goToNextSlide()">Que signifie-t-elle ?</button>
     </ion-slide>
     <ion-slide class="fifthScreenNewman">
+      <img src="assets/img/escape_black.svg" alt="" class="goHome" (tap)="showConfirm()">
       <ion-scroll  zooming="true" scrollY="true" style="width: 100%; height: 100vh">
         <div class="fifthScreenNewman__firstBg"></div>
         <h2 class="fifthScreenNewman__bigText">Barnett Newman est un artiste du <span class="bold">sublime.</span></h2>
@@ -42,6 +44,11 @@
         <div class="fifthScreenNewman__square"></div>
         <img class="fifthScreenNewman__brush"src="assets/img/newman_explications_2.png" alt="">
         <p class="fifthScreenNewman__text fifthScreenNewman__textSecond">Georges en hébreu signifie « briller », et par trois lignes tranchant une toile vierge monumentale simplement enduite, il crée une sensation de grandeur qui donne son nom à l’oeuvre Shining Forth, « Qui brille au loin ».</p>
+        <p class="fifthScreenNewman__text fifthScreenNewman__text--center bold">Cette oeuvre s’apprécie par la déambulation</p>
+        <div class="fifthScreenNewman__thirdBg"></div>
+        <h4 class="fifthScreenNewman__bigText fifthScreenNewman__bigText--centerNarrow">Ressentez l'infini en vous plaçant <span class="black">au plus proche de l'oeuvre</span></h4>
+        <div class="fifthScreenNewman__square fifthScreenNewman__square--color"></div>
+        <button class="fifthScreenNewman__button mainButton" (tap)="goToNextSlide()">Je suis prêt</button>
       </ion-scroll>
     </ion-slide>
 
