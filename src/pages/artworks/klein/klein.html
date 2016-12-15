@@ -4,21 +4,21 @@
   <ion-slides #mySlider [options]="mySlideOptions">
 
     <ion-slide class="firstScreenKlein">
-      <img src="assets/img/escape_white.svg" alt="" class="goHome" (tap)="showConfirm()">
+      <img src="assets/img/escape_white.svg" alt="" class="goHome" (click)="showConfirm()">
       <h4 class="firstScreenKlein__topTitle topTitle">Vous vous apprêtez à vivre une expérience avec IKB 3 de Yves Klein</h4>
       <h2 class="firstScreenKlein__title mainTitle mainTitle--white">Placez vous devant l'oeuvre</h2>
-      <button class="firstScreenKlein__button mainButton" (tap)="goToNextSlide()">Ok</button>
+      <button class="firstScreenKlein__button mainButton" (click)="goToNextSlide()">Ok</button>
     </ion-slide>
 
     <ion-slide class="beforeSecondScreenKlein">
-      <img src="assets/img/escape_white.svg" alt="" class="goHome" (tap)="showConfirm()">
+      <img src="assets/img/escape_white.svg" alt="" class="goHome" (click)="showConfirm()">
       <h2 class="beforeSecondScreenKlein__title mainTitle mainTitle--white">Préparez <br> vous !</h2>
       <h4 class="beforeSecondScreenKlein__subitle subtitle">Nous vous confions la lourde tâche de reproduire cette oeuvre.</h4>
-      <button class="beforeSecondScreenKlein__button mainButton" (tap)="goToNextSlide()">C'est parti !</button>
+      <button class="beforeSecondScreenKlein__button mainButton" (click)="goToNextSlide()">C'est parti !</button>
     </ion-slide>
 
     <ion-slide class="secondScreenKlein">
-      <img src="assets/img/escape_black.svg" alt="" class="goHome" (tap)="showConfirm()">
+      <img src="assets/img/escape_black.svg" alt="" class="goHome" (click)="showConfirm()">
       <h2 class="secondScreenKlein__title topTitleBrush">A vous de jouer !</h2>
       <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
       <div class="secondScreenKlein__bottom">
@@ -37,12 +37,12 @@
           <label for="colorThree"></label>
           </p>
         </div> -->
-        <button class="secondScreenKlein__button mainButton" (tap)="goToNextSlide()">J'ai terminé</button>
+        <button class="secondScreenKlein__button mainButton" (click)="goToNextSlide()">J'ai terminé</button>
       </div>
     </ion-slide>
 
     <ion-slide class="thirdScreenKlein">
-      <img src="assets/img/escape_black.svg" alt="" class="goHome" (tap)="showConfirm()">
+      <img src="assets/img/escape_black.svg" alt="" class="goHome" (click)="showConfirm()">
       <h2 class="thirdScreenKlein__title topTitle">Que voyez vous dans IKB 3 ?</h2>
       <p class="thirdScreenKlein__linesChoices linesChoices">
         <input type="checkbox" id="choiceOne">
@@ -64,18 +64,18 @@
         <input type="checkbox" id="choiceFive">
         <label for="choiceFive">Beaucoup de bleu</label>
       </p>
-      <button class="thirdScreenKlein__button mainButton" (tap)="goToNextSlide()">Valider</button>
+      <button class="thirdScreenKlein__button mainButton" (click)="goToNextSlide()">Valider</button>
     </ion-slide>
 
     <ion-slide class="fourthScreenKlein">
-      <img src="assets/img/escape_black.svg" alt="" class="goHome" (tap)="showConfirm()">
+      <img src="assets/img/escape_black.svg" alt="" class="goHome" (click)="showConfirm()">
       <h4 class="fourthScreenKlein__title topTitle">Si vous avez sélectionné le moindre de ces choix</h4>
       <h2 class="fourthScreenKlein__secondTitle mainTitle">Bravo vous avez compris l'oeuvre !</h2>
-      <button class="fourthScreenKlein__button mainButton" (tap)="goToNextSlide()">Ah bon ?</button>
+      <button class="fourthScreenKlein__button mainButton" (click)="goToNextSlide()">Ah bon ?</button>
     </ion-slide>
 
     <ion-slide class="fifthScreenKleinKlein">
-      <img src="assets/img/escape_black.svg" alt="" class="goHome" (tap)="showConfirm()">
+      <img src="assets/img/escape_black.svg" alt="" class="goHome" (click)="showConfirm()">
       <ion-scroll  zooming="true" scrollY="true" style="width: 100%; height: 100vh">
         <img class="fifthScreenKlein__brush fifthScreenKlein__brush--first" src="assets/img/brushstroke1.png" alt="">
         <img class="fifthScreenKlein__brush fifthScreenKlein__brush--second" src="assets/img/brushstroke2.png" alt="">
@@ -108,41 +108,41 @@
         <h2 class="fifthScreenKlein__bigText fifthScreenKlein__bigText--white">D'ailleurs... retournez vous</h2>
         <h2 class="fifthScreenKlein__bigText fifthScreenKlein__bigText--narrow fifthScreenKlein__bigText--margin">LA PEINTURE DE KLEIN EST UNIQUE POUR SON MÉLANGE SATURÉ EN PIGMENTS</h2>
         <p class="fifthScreenKlein__subtitle fifthScreenKlein__subtitle--narrow">Sa vibrance et sa texture ne peuvent être éprouvées qu’en réalité</p>
-        <button class="fifthScreenKlein__button mainButton" (tap)="goToNextSlide()">Testez !</button>
+        <button class="fifthScreenKlein__button mainButton" (click)="goToNextSlide()">Testez !</button>
       </ion-scroll>
     </ion-slide>
     <ion-slide class="sixthScreenKlein">
-      <img src="assets/img/escape_white.svg" alt="" class="goHome" (tap)="showConfirm()">
+      <img src="assets/img/escape_white.svg" alt="" class="goHome" (click)="showConfirm()">
       <h2 class="sixthScreenKlein__title topTitleBrush topTitleBrush--white">A vous de jouer !</h2>
       <ion-icon name="ios-camera" class="sixthScreenKlein__icon" (click)="takePicture()"></ion-icon>
       <h4 class="sixthScreenKlein__instructions">Appuyez sur l'appareil photo lancer la caméra</h4>
-      <button class="sixthScreenKlein__button mainButton" (tap)="goTo(8)">Passer</button>
+      <button class="sixthScreenKlein__button mainButton" (click)="goTo(8)">Passer</button>
     </ion-slide>
     <ion-slide class="seventhScreenKlein">
-      <img src="assets/img/escape_black.svg" alt="" class="goHome" (tap)="showConfirm()">
+      <img src="assets/img/escape_black.svg" alt="" class="goHome" (click)="showConfirm()">
       <img [src]="base64Image" *ngIf="base64Image" class="seventhScreenKlein__img"/>
       <!-- <img [src]="base64Image" class="seventhScreenKlein__img"/> -->
       <p class="seventhScreenKlein__text">
         <span class="bigger">Comparez !</span> <br>
         Jamais on ne pourra capturer l'essence de l'<span class="bold">IKB</span>.
       </p>
-      <button class="seventhScreenKlein__button mainButton" (tap)="goToNextSlide()">Suivant</button>
+      <button class="seventhScreenKlein__button mainButton" (click)="goToNextSlide()">Suivant</button>
     </ion-slide>
     <ion-slide class="eightScreenKlein">
-      <img src="assets/img/escape_white.svg" alt="" class="goHome" (tap)="showConfirm()">
+      <img src="assets/img/escape_white.svg" alt="" class="goHome" (click)="showConfirm()">
       <h2 class="mainTitle mainTitle--white">Nous vous invitons à passer un moment avec IKB 3</h2>
-      <button class="eightScreenKlein__button mainButton" (tap)="goToNextSlide()">Je suis prêt</button>
+      <button class="eightScreenKlein__button mainButton" (click)="goToNextSlide()">Je suis prêt</button>
     </ion-slide>
     <ion-slide class="ninthScreenKlein">
-      <img src="assets/img/escape_black.svg" alt="" class="goHome" (tap)="showConfirm()">
-      <audio #audioPlayer class="ninthScreenKlein__audioPlayer" src="assets/audio/song.mp3" preload></audio>
-      <h2 class="topTitle" (tap)="triggerSong(audioPlayer, playIcon, pauseIcon)">Branchez vos écouteurs et explorez IKB 3 comme l'aurait voulu Yves Klein</h2>
-      <h4 class="ninthScreenKlein__instructions" (tap)="triggerSong(audioPlayer, playIcon, pauseIcon)">Appuyez sur la pochette pour entrer en contact avec l'oeuvre !</h4>
-      <img class="ninthScreenKlein__monochrome" src="assets/img/monochrome.png" alt="" (tap)="triggerSong(audioPlayer, playIcon, pauseIcon)">
-      <img src="assets/img/klein_music.png" alt="" class="ninthScreenKlein__card" (tap)="triggerSong(audioPlayer, playIcon, pauseIcon)">
-      <ion-icon #playIcon class="ninthScreenKlein__icon ninthScreenKlein__icon--play" (tap)="triggerSong(audioPlayer, playIcon, pauseIcon)" name="play"></ion-icon>
-      <ion-icon #pauseIcon class="ninthScreenKlein__icon ninthScreenKlein__icon--pause" (tap)="triggerSong(audioPlayer, playIcon, pauseIcon)" name="pause"></ion-icon>
-      <button class="ninthScreenKlein__button mainButton" (tap)="endExperience()">Terminer</button>
+      <img src="assets/img/escape_black.svg" alt="" class="goHome" (click)="showConfirm()">
+      <audio #audioPlayer class="ninthScreenKlein__audioPlayer" src="assets/audio/song.m4a" preload></audio>
+      <h2 class="topTitle" (click)="triggerSong(audioPlayer, playIcon, pauseIcon)">Branchez vos écouteurs et explorez IKB 3 comme l'aurait voulu Yves Klein</h2>
+      <h4 class="ninthScreenKlein__instructions" (click)="triggerSong(audioPlayer, playIcon, pauseIcon)">Appuyez sur la pochette pour entrer en contact avec l'oeuvre !</h4>
+      <img class="ninthScreenKlein__monochrome" src="assets/img/monochrome.png" alt="" (click)="triggerSong(audioPlayer, playIcon, pauseIcon)">
+      <img src="assets/img/klein_music.png" alt="" class="ninthScreenKlein__card" (click)="triggerSong(audioPlayer, playIcon, pauseIcon)">
+      <ion-icon #playIcon class="ninthScreenKlein__icon ninthScreenKlein__icon--play" (click)="triggerSong(audioPlayer, playIcon, pauseIcon)" name="play"></ion-icon>
+      <ion-icon #pauseIcon class="ninthScreenKlein__icon ninthScreenKlein__icon--pause" (click)="triggerSong(audioPlayer, playIcon, pauseIcon)" name="pause"></ion-icon>
+      <button class="ninthScreenKlein__button mainButton" (click)="endExperience()">Terminer</button>
     </ion-slide>
 
 </ion-slides>

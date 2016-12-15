@@ -1,8 +1,9 @@
-.goHome {
+.swiper-slide img.goHome {
   position: absolute;
+  z-index: 20;
   right: 15px;
   top: 40px;
-  z-index: 2;
+  width: 30px;
 }
 
 .customAlert {
