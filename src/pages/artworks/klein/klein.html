@@ -116,14 +116,16 @@
       <h2 class="sixthScreenKlein__title topTitleBrush topTitleBrush--white">A vous de jouer !</h2>
       <ion-icon name="ios-camera" class="sixthScreenKlein__icon" (click)="takePicture()"></ion-icon>
       <h4 class="sixthScreenKlein__instructions">Appuyez sur l'appareil photo lancer la caméra</h4>
-      <button class="sixthScreenKlein__button mainButton" (click)="goTo(8)">Passer</button>
+      <button class="sixthScreenKlein__button mainButton" (click)="goTo(3)">Passer</button>
     </ion-slide>
     <ion-slide class="seventhScreenKlein">
       <img src="assets/img/escape_black.svg" alt="" class="goHome" (click)="showConfirm()">
       <div class="seventhScreenKlein__imgContainer">
         <img [src]="base64Image" *ngIf="base64Image" class="seventhScreenKlein__img"/>
       </div>
-      <!-- <img [src]="base64Image" class="seventhScreenKlein__img"/> -->
+      <!-- <div class="seventhScreenKlein__imgContainer">
+        <img src="http://lorempixel.com/1175/850/" class="seventhScreenKlein__img"/>
+      </div> -->
       <p class="seventhScreenKlein__text">
         <span class="bigger">Comparez !</span> <br>
         Jamais on ne pourra capturer l'essence de l'<span class="bold">IKB</span>.
