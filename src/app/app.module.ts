@@ -5,6 +5,7 @@ import { HomePage } from '../pages/home/home';
 import { ArtworksPageKlein } from '../pages/artworks/klein/klein';
 import { ArtworksPageNewman } from '../pages/artworks/newman/newman';
 import { SignaturePadModule } from 'angular2-signaturepad';
+// import { Beacon } from '../components/beacon';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { SignaturePadModule } from 'angular2-signaturepad';
   ],
   imports: [
     IonicModule.forRoot(MyApp),
-    SignaturePadModule
+    SignaturePadModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [

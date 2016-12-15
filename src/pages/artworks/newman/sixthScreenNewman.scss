@@ -1,0 +1,95 @@
+.sixthScreenNewman {
+  perspective: 1000px;
+}
+
+.sixthScreenNewman__bg {
+  background: radial-gradient(54% 48%, #FFFFFF 55%, #ebebeb 100%);
+  width: 677px;
+  height: 720px;
+  position: absolute;
+  left: -100px;
+  z-index: 0;
+  margin: auto;
+  top: 0;
+}
+
+.sixthScreenNewman__artwork {
+  width: 354px;
+  height: 231px;
+  margin: auto;
+  background-image: url('../assets/img/artwork_barnett_canvas.jpg');
+  // transform: rotateX(5deg) rotateY(-5deg);
+  background-size: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+  animation: move 10s infinite;
+  z-index: 1;
+
+  &:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+    display: block;
+    content: '';
+    height: 22px;
+    width: 100%;
+    background: url('../assets/img/artwork_card_shadow.png') no-repeat;
+    background-size: 100%;
+    filter: grayscale(100%);
+  }
+}
+
+.sixthScreenNewman__title {
+  width: 302.5px;
+  font-family: $mainFont;
+  font-size: 24px;
+  text-align: center;
+  line-height: 29px;
+  color: #000000;
+  top: 50px;
+  left: calc(50% - 150px);
+  top: -30px;
+  position: relative;
+  z-index: 2;
+}
+
+.sixthScreenNewman__subtitle {
+  width: 302.5px;
+  font-family: $mainFont;
+  font-size: 34px;
+  text-align: center;
+  line-height: 40px;
+  color: #000000;
+  position: relative;
+  z-index: 2;
+  left: calc(50% - 150px);
+}
+
+@keyframes move {
+  from, to {
+    transform: rotateX(20deg) rotateY(-20deg);
+  }
+  12% {
+    transform: rotateX(40deg) rotateY(1deg);
+  }
+  25% {
+    transform: rotateX(20deg) rotateY(20deg);
+  }
+  32% {
+    transform: rotateX(-1deg) rotateY(20deg);
+  }
+  50% {
+    transform: rotateX(-20deg) rotateY(20deg);
+  }
+  62% {
+    transform: rotateX(-40deg) rotateY(1deg);
+  }
+  75% {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+  87% {
+    transform: rotateX(-1deg) rotateY(-20deg);
+  }
+}

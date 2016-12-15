@@ -120,7 +120,9 @@
     </ion-slide>
     <ion-slide class="seventhScreenKlein">
       <img src="assets/img/escape_black.svg" alt="" class="goHome" (click)="showConfirm()">
-      <img [src]="base64Image" *ngIf="base64Image" class="seventhScreenKlein__img"/>
+      <div class="seventhScreenKlein__imgContainer">
+        <img [src]="base64Image" *ngIf="base64Image" class="seventhScreenKlein__img"/>
+      </div>
       <!-- <img [src]="base64Image" class="seventhScreenKlein__img"/> -->
       <p class="seventhScreenKlein__text">
         <span class="bigger">Comparez !</span> <br>

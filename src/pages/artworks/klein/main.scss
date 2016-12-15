@@ -4,7 +4,10 @@ ion-slide {
   color: $mainColor;
 }
 
-.firstScreenKlein, .beforeSecondScreenKlein, .sixthScreenKlein, .eightScreenKlein {
+.firstScreenKlein,
+.beforeSecondScreenKlein,
+.sixthScreenKlein,
+.eightScreenKlein {
   background-color: #231b63;
 }
 .secondScreenKlein {
@@ -16,12 +19,17 @@ ion-icon.sixthScreenKlein__icon {
   color: #FFF;
 }
 
-.swiper-slide img.seventhScreenKlein__img {
-  width: 100%;
-  height: 400px;
+.seventhScreenKlein__imgContainer {
+  width: 375px;
+  height: 350px;
+  overflow: hidden;
   position: absolute;
-  left: 0;
   top: 0;
+}
+
+.swiper-slide img.seventhScreenKlein__img {
+  width: 375px;
+  height: auto;
 }
 
 .seventhScreenKlein__text {
