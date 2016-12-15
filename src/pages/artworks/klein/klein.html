@@ -22,7 +22,7 @@
       <h2 class="secondScreenKlein__title topTitleBrush">A vous de jouer !</h2>
       <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
       <div class="secondScreenKlein__bottom">
-        <h4 class="secondScreenKlein__chooseTitle">Choisissez une couleur</h4>
+        <!-- <h4 class="secondScreenKlein__chooseTitle">Choisissez une couleur</h4> -->
         <!-- <div class="secondScreenKlein__checkboxes">
           <p>
           <input type="radio" checked name="colors" id="colorOne" >
@@ -50,19 +50,19 @@
       </p>
       <p class="thirdScreenKlein__linesChoices linesChoices">
         <input type="checkbox" id="choiceTwo">
-        <label for="choiceTwo">De la tristesse</label>
+        <label for="choiceTwo">Du bleu</label>
       </p>
       <p class="thirdScreenKlein__linesChoices linesChoices">
         <input type="checkbox" id="choiceThree">
-        <label for="choiceThree">De la peur</label>
+        <label for="choiceThree">Un trou sans fond</label>
       </p>
       <p class="thirdScreenKlein__linesChoices linesChoices">
         <input type="checkbox" id="choiceFour">
-        <label for="choiceFour">Lorem</label>
+        <label for="choiceFour">Le néant</label>
       </p>
       <p class="thirdScreenKlein__linesChoices linesChoices">
         <input type="checkbox" id="choiceFive">
-        <label for="choiceFive">Lorem</label>
+        <label for="choiceFive">Beaucoup de bleu</label>
       </p>
       <button class="thirdScreenKlein__button mainButton" (tap)="goToNextSlide()">Valider</button>
     </ion-slide>
@@ -112,11 +112,20 @@
       </ion-scroll>
     </ion-slide>
     <ion-slide class="sixthScreenKlein">
-      <img src="assets/img/escape_black.svg" alt="" class="goHome" (tap)="showConfirm()">
-      <button class="sixthScreenKlein__button mainButton" (tap)="goToNextSlide()">Suivant</button>
+      <img src="assets/img/escape_white.svg" alt="" class="goHome" (tap)="showConfirm()">
+      <h2 class="sixthScreenKlein__title topTitleBrush topTitleBrush--white">A vous de jouer !</h2>
+      <ion-icon name="ios-camera" class="sixthScreenKlein__icon" (click)="takePicture()"></ion-icon>
+      <h4 class="sixthScreenKlein__instructions">Appuyez sur l'appareil photo lancer la caméra</h4>
+      <button class="sixthScreenKlein__button mainButton" (tap)="goTo(8)">Passer</button>
     </ion-slide>
     <ion-slide class="seventhScreenKlein">
       <img src="assets/img/escape_black.svg" alt="" class="goHome" (tap)="showConfirm()">
+      <img [src]="base64Image" *ngIf="base64Image" class="seventhScreenKlein__img"/>
+      <!-- <img [src]="base64Image" class="seventhScreenKlein__img"/> -->
+      <p class="seventhScreenKlein__text">
+        <span class="bigger">Comparez !</span> <br>
+        Jamais on ne pourra capturer l'essence de l'<span class="bold">IKB</span>.
+      </p>
       <button class="seventhScreenKlein__button mainButton" (tap)="goToNextSlide()">Suivant</button>
     </ion-slide>
     <ion-slide class="eightScreenKlein">

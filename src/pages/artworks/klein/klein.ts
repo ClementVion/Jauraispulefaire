@@ -3,6 +3,7 @@ import { Slides } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
 import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 import { AlertController } from 'ionic-angular';
+import {Camera} from 'ionic-native';
 
 
 @Component({
@@ -11,9 +12,25 @@ import { AlertController } from 'ionic-angular';
 })
 
 export class ArtworksPageKlein {
+  public base64Image: string;
 
   constructor(public navCtrl: NavController,
               public alertCtrl: AlertController) {}
+
+
+  takePicture(){
+   Camera.getPicture({
+       destinationType: Camera.DestinationType.DATA_URL,
+       targetWidth: 1000,
+       targetHeight: 1000
+   }).then((imageData) => {
+     // imageData is a base64 encoded string
+       this.base64Image = "data:image/jpeg;base64," + imageData;
+       this.slider.slideNext(0);
+   }, (err) => {
+       console.log(err);
+   });
+ }
 
   /**
    * Slider
@@ -34,6 +51,9 @@ export class ArtworksPageKlein {
     this.navCtrl.pop(ArtworksPageKlein);
   }
 
+  goTo(n) {
+    this.slider.slideTo(n, 300);
+  }
 
   /**
    * Canvas

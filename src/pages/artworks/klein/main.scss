@@ -4,9 +4,44 @@ ion-slide {
   color: $mainColor;
 }
 
-.firstScreenKlein, .beforeSecondScreenKlein, .eightScreenKlein {
+.firstScreenKlein, .beforeSecondScreenKlein, .sixthScreenKlein, .eightScreenKlein {
   background-color: #231b63;
 }
 .secondScreenKlein {
   background-color: #EFEFEF;
+}
+
+ion-icon.sixthScreenKlein__icon {
+  font-size: 150px;
+  color: #FFF;
+}
+
+.swiper-slide img.seventhScreenKlein__img {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.seventhScreenKlein__text {
+  width: 290px;
+  font-family: $mainFont;
+  font-size: 28px;
+  text-align: center;
+  line-height: 32px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 320px auto 0 auto;
+
+  .bigger {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
 }
